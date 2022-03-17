@@ -52,8 +52,8 @@ var Autocomplete = function (_React$Component) {
   }
 
   _createClass(Autocomplete, [{
-    key: 'componentWillMount',
-    value: function componentWillMount() {
+    key: 'UNSAFE_componentWillMount',
+    value: function UNSAFE_componentWillMount() {
       // this.refs is frozen, so we need to assign a new object to it
       this.refs = {};
       this._ignoreBlur = false;
@@ -68,8 +68,8 @@ var Autocomplete = function (_React$Component) {
       this._scrollTimer = null;
     }
   }, {
-    key: 'componentWillReceiveProps',
-    value: function componentWillReceiveProps(nextProps) {
+    key: 'UNSAFE_componentWillReceiveProps',
+    value: function UNSAFE_componentWillReceiveProps(nextProps) {
       if (this.state.highlightedIndex !== null) {
         this.setState(this.ensureHighlightedIndex);
       }
